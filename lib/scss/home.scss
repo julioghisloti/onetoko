@@ -1,0 +1,108 @@
+//- ONE toko - Estilo HOME
+
+//- Base
+@import "base.scss";
+@import "compass/css3";
+
+//- Banner
+.banner-all{
+	height: 600px;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+
+	img{
+		float: left;
+		width: 100%;
+	}
+
+	.banner-content{
+		height: 503px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		width: 1400px;
+		top: 82px;
+
+		//- switch
+		.switch{
+			background: url("../img/top-bg.png") repeat;
+			height: 71px;
+			margin-top: -43px;
+			padding: 10px;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			width: 14px;
+
+			li{
+				border: 1px solid $verde2;
+				height: 12px;
+				margin-bottom: 5px;
+				width: 12px;
+
+				@include border-radius(100%);
+				@include transition-duration(1s);
+				@include transition-property(1s);
+			}
+
+			li:hover{
+				border: 1px solid $verde1;
+				cursor: pointer;
+			}
+
+			.active{background-color: $verde1;}
+
+		}
+
+		.banner-text{
+			background: url("../img/top-bg.png") repeat;
+			bottom: 0;
+			font-family: 'muliregular';
+			height: 195px;
+			position: absolute;
+			width: 485px;
+
+			@include border-radius(5px);
+
+			h1{
+				border-left: 3px solid $verde1;
+				font-size: 30px;
+				margin-top: 15px;
+				
+				span{
+					margin-left: 6px;
+				}
+
+			}
+
+			p{
+				font-size: 16px;
+				padding: 10px;
+			}
+
+			a{
+				color: $verde1;
+				font-size: 25px;
+				margin-left: 10px;
+				text-decoration: none;
+			}
+
+		}
+
+	}
+
+}
+
+//- Slider
+.slider-all{
+	height: 306px;
+	position: relative;
+	width: 1400px;
+
+	.setas{
+		position: absolute;
+		width: ;
+	}
+
+}
