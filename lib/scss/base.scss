@@ -52,6 +52,7 @@ $verde1: #009933;
 $verde2: #006633;
 $cinza1: #F3F3F3;
 $cinza2: #999;
+$cinza3: #666;
 
 //- Topo
 .top-all{
@@ -122,4 +123,14 @@ $cinza2: #999;
 	margin-top: 20px;
 	position: relative;
 	width: 1400px;
+}
+
+/*===================================================================
+	- > 1440px -
+===================================================================*/
+@media screen and(max-width: 1439px){
+	.top-in{width: 1200px !important;}
+	.content{width: 1200px !important;}
+	.slider-all{width: 1200px !important;}
+	.slider-content{width: 1200px !important;}
 }

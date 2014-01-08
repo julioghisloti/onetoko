@@ -2,6 +2,7 @@
 <html class="no-js" lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>One Toko</title>
 
 	<!-- [Modernizr] -->
@@ -13,53 +14,8 @@
 </head>
 <body>
 
-	<!-- [top-al] -->
-		<header class="top-all">
-			
-			<!-- [top-in] -->
-				<div class="top-in">
-					
-					<!-- Logo -->
-					<div class="logo">
-						<img src="lib/img/logo.png" height="34" width="145" alt="Logotipo One Toko" />
-					</div>
-
-					<!-- [search-all] -->
-						<div class="search-all">
-							<form action="#" method="post">
-								
-								<!-- search input -->
-								<input type="text" name="search" value="Pesquisar um Produto"/>
-
-								<!-- Submit -->
-								<button>
-								  <img src="lib/img/search-icon.png" height="16" width="16" alt="Botão Buscar Produto">
-								</button>
-							
-							</form>
-						</div>
-					<!-- [/search-all] -->
-
-					<!-- [user-place] -->
-						<div class="user-place">
-							
-							<!-- user img -->
-
-							<!-- user name -->
-
-							<!-- [user-option] -->
-								<div class="user-option"></div>
-								<div class="user-option_drop"></div>
-							<!-- [/user-option] -->
-
-						</div>
-					<!-- [/user-place] -->
-
-				</div>
-			<!-- [/top-in] -->
-
-		</header>
-	<!-- [/top-al] -->
+	<!-- [top] -->
+	<?php include "lib/comp/topo.php"; ?>
 
 	<!-- [banner] -->
 		<section class="banner-all">
@@ -101,9 +57,27 @@
 			
 			<!-- [slider] -->
 				<section class="slider-all">
-					<div class="setas prev"></div>
 					
+					<!-- slider-title -->
+					<h1>Melhores Classificados</h1>
 
+					<div class="setas prev"></div>
+					<div class="setas next"></div>
+					
+					<!-- slider-content -->
+					<div class="slider-content">
+						<ul>
+							<li>
+								<h1><span>Title</span></h1>
+								<img src="lib/img/text-img-slider.png" height="174" width="260" alt=""/>
+								<p>
+									After 25 years, Dr. Dre was tired of spending months on a track only to have his 
+									fans hear it on weak, distorting earbuds. <a href="#">ver mais...</a>
+								</p>
+							</li>
+						
+						</ul>
+					</div>
 
 				</section>
 			<!-- [/slider] -->
@@ -111,5 +85,10 @@
 		</main>
 	<!-- [/content] -->
 	
+	<!-- [scripts] -->
+	<script src="lib/js/jquery.min.js"></script>
+	<script src="lib/js/jcarousellite.min.js"></script>
+	<script src="lib/js/home.js"></script>
+
 </body>
 </html>

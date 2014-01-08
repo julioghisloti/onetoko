@@ -87,7 +87,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 57, ../scss/base.scss */
+/* line 58, ../scss/base.scss */
 .top-all {
   background: url("../img/top-bg.png") repeat;
   border-bottom: 1px solid #999999;
@@ -96,7 +96,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 100%;
   z-index: 9999;
 }
-/* line 66, ../scss/base.scss */
+/* line 67, ../scss/base.scss */
 .top-all .top-in {
   margin-left: auto;
   margin-right: auto;
@@ -104,12 +104,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: 13px;
   width: 1400px;
 }
-/* line 73, ../scss/base.scss */
+/* line 74, ../scss/base.scss */
 .top-all .top-in .logo {
   float: left;
   position: relative;
 }
-/* line 78, ../scss/base.scss */
+/* line 79, ../scss/base.scss */
 .top-all .top-in .search-all {
   border: 1px solid #006633;
   height: 37px;
@@ -123,7 +123,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 88, ../scss/base.scss */
+/* line 89, ../scss/base.scss */
 .top-all .top-in .search-all input[type="text"] {
   background: url("");
   border: 0px;
@@ -135,7 +135,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-top: 7px;
   width: 337px;
 }
-/* line 100, ../scss/base.scss */
+/* line 101, ../scss/base.scss */
 .top-all .top-in .search-all button {
   background: url("");
   border: 0;
@@ -144,12 +144,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   right: 5px;
   top: 8px;
 }
-/* line 109, ../scss/base.scss */
+/* line 110, ../scss/base.scss */
 .top-all .top-in .search-all button:hover {
   cursor: pointer;
 }
 
-/* line 118, ../scss/base.scss */
+/* line 119, ../scss/base.scss */
 .content {
   display: table;
   margin-left: auto;
@@ -157,4 +157,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-top: 20px;
   position: relative;
   width: 1400px;
+}
+
+/*===================================================================
+	- > 1440px -
+===================================================================*/
+@media screen and (max-width: 1439px) {
+  /* line 132, ../scss/base.scss */
+  .top-in {
+    width: 1200px !important;
+  }
+
+  /* line 133, ../scss/base.scss */
+  .content {
+    width: 1200px !important;
+  }
+
+  /* line 134, ../scss/base.scss */
+  .slider-all {
+    width: 1200px !important;
+  }
+
+  /* line 135, ../scss/base.scss */
+  .slider-content {
+    width: 1200px !important;
+  }
 }
