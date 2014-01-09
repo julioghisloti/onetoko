@@ -66,10 +66,55 @@
 					
 					<!-- slider-content -->
 					<div class="slider-content">
-						<ul>
+						<ul class="slider-content-in">
 							<li>
 								<h1><span>Title</span></h1>
-								<img src="lib/img/text-img-slider.png" height="174" width="260" alt=""/>
+								<img src="lib/img/text-img-slider.png" alt=""/>
+								<p>
+									After 25 years, Dr. Dre was tired of spending months on a track only to have his 
+									fans hear it on weak, distorting earbuds. <a href="#">ver mais...</a>
+								</p>
+							</li>
+
+							<li>
+								<h1><span>Title</span></h1>
+								<img src="lib/img/text-img-slider.png" alt=""/>
+								<p>
+									After 25 years, Dr. Dre was tired of spending months on a track only to have his 
+									fans hear it on weak, distorting earbuds. <a href="#">ver mais...</a>
+								</p>
+							</li>
+
+							<li>
+								<h1><span>Title</span></h1>
+								<img src="lib/img/text-img-slider.png" alt=""/>
+								<p>
+									After 25 years, Dr. Dre was tired of spending months on a track only to have his 
+									fans hear it on weak, distorting earbuds. <a href="#">ver mais...</a>
+								</p>
+							</li>
+
+							<li>
+								<h1><span>Title</span></h1>
+								<img src="lib/img/text-img-slider.png" alt=""/>
+								<p>
+									After 25 years, Dr. Dre was tired of spending months on a track only to have his 
+									fans hear it on weak, distorting earbuds. <a href="#">ver mais...</a>
+								</p>
+							</li>
+
+							<li>
+								<h1><span>Title</span></h1>
+								<img src="lib/img/text-img-slider.png" alt=""/>
+								<p>
+									After 25 years, Dr. Dre was tired of spending months on a track only to have his 
+									fans hear it on weak, distorting earbuds. <a href="#">ver mais...</a>
+								</p>
+							</li>
+
+							<li>
+								<h1><span>Title</span></h1>
+								<img src="lib/img/text-img-slider.png" alt=""/>
 								<p>
 									After 25 years, Dr. Dre was tired of spending months on a track only to have his 
 									fans hear it on weak, distorting earbuds. <a href="#">ver mais...</a>
@@ -88,7 +133,8 @@
 	<!-- [scripts] -->
 	<script src="lib/js/jquery.min.js"></script>
 	<script src="lib/js/jcarousellite.min.js"></script>
-	<script src="lib/js/home.js"></script>
+	<script src="lib/js/jquery.touchwipe.min.js"></script>
+	<script src="lib/js/main.js"></script>
 
 </body>
 </html>
