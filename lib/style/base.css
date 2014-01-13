@@ -1,15 +1,7 @@
 @font-face {
-  font-family: 'alteraregular';
-  src: url("../font/altera-webfont.eot");
-  src: url("../font/altera-webfont.eot?#iefix") format("embedded-opentype"), url("../font/altera-webfont.woff") format("woff"), url("../font/altera-webfont.ttf") format("truetype"), url("../font/altera-webfont.svg#alteraregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'amorinoregular';
-  src: url("../font/amorino_beta-webfont.eot");
-  src: url("../font/amorino_beta-webfont.eot?#iefix") format("embedded-opentype"), url("../font/amorino_beta-webfont.woff") format("woff"), url("../font/amorino_beta-webfont.ttf") format("truetype"), url("../font/amorino_beta-webfont.svg#amorinoregular") format("svg");
+  font-family: 'muli';
+  src: url("../font/muli-light-webfont.eot");
+  src: url("../font/muli-light-webfont.eot?#iefix") format("embedded-opentype"), url("../font/muli-light-webfont.woff") format("woff"), url("../font/muli-light-webfont.ttf") format("truetype"), url("../font/muli-light-webfont.svg#muliregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -87,7 +79,63 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 58, ../scss/base.scss */
+/* line 37, ../scss/base.scss */
+.col-50pc {
+  float: left;
+  margin-right: 2%;
+  position: relative;
+  width: 48%;
+}
+
+/* line 45, ../scss/base.scss */
+a, a:link, a:visited {
+  color: #006600;
+}
+
+/* line 48, ../scss/base.scss */
+body {
+  font-family: 'muli';
+}
+
+/* line 49, ../scss/base.scss */
+strong {
+  font-family: 'muliregular';
+}
+/* line 51, ../scss/base.scss */
+strong a, strong a:link, strong a:visited {
+  text-decoration: none;
+}
+
+/* line 55, ../scss/base.scss */
+.title {
+  border-bottom: 1px solid #006600;
+  display: table;
+  font-size: 1.6em !important;
+  margin-bottom: 20px;
+  width: 100%;
+}
+/* line 62, ../scss/base.scss */
+.title span {
+  border-bottom: 2px solid #009933;
+  color: #666666;
+  float: left;
+}
+
+/* line 70, ../scss/base.scss */
+.icon {
+  background: url("../img/sprite.png") no-repeat;
+  float: left;
+  height: 16px;
+  position: relative;
+  width: 16px;
+}
+
+/* line 78, ../scss/base.scss */
+.responder {
+  background-position: -134px -32px;
+}
+
+/* line 81, ../scss/base.scss */
 .top-all {
   background: url("../img/top-bg.png") repeat;
   border-bottom: 1px solid #999999;
@@ -96,7 +144,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 100%;
   z-index: 9999;
 }
-/* line 67, ../scss/base.scss */
+/* line 90, ../scss/base.scss */
 .top-all .top-in {
   margin-left: auto;
   margin-right: auto;
@@ -104,14 +152,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: 13px;
   width: 1400px;
 }
-/* line 74, ../scss/base.scss */
+/* line 97, ../scss/base.scss */
 .top-all .top-in .logo {
   float: left;
   position: relative;
 }
-/* line 79, ../scss/base.scss */
+/* line 102, ../scss/base.scss */
 .top-all .top-in .search-all {
-  border: 1px solid #006633;
+  border: 1px solid #006600;
   height: 37px;
   margin-left: auto;
   margin-right: auto;
@@ -123,7 +171,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 89, ../scss/base.scss */
+/* line 112, ../scss/base.scss */
 .top-all .top-in .search-all input[type="text"] {
   background: url("");
   border: 0px;
@@ -135,7 +183,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-top: 7px;
   width: 337px;
 }
-/* line 101, ../scss/base.scss */
+/* line 124, ../scss/base.scss */
 .top-all .top-in .search-all button {
   background: url("");
   border: 0;
@@ -144,11 +192,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   right: 5px;
   top: 8px;
 }
-/* line 110, ../scss/base.scss */
+/* line 133, ../scss/base.scss */
 .top-all .top-in .search-all button:hover {
   cursor: pointer;
 }
-/* line 114, ../scss/base.scss */
+/* line 137, ../scss/base.scss */
 .top-all .top-in .user-place {
   display: block;
   height: 36px;
@@ -157,7 +205,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: 3px;
   width: 50px;
 }
-/* line 122, ../scss/base.scss */
+/* line 145, ../scss/base.scss */
 .top-all .top-in .user-place .user-option_drop-icon {
   background: url("../img/sprite.png") no-repeat;
   background-position: -1px -1px;
@@ -169,7 +217,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 9px;
 }
 
-/* line 140, ../scss/base.scss */
+/* line 163, ../scss/base.scss */
 .content {
   display: table;
   margin-left: auto;
@@ -179,16 +227,58 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 1400px;
 }
 
+/* line 173, ../scss/base.scss */
+.content-info {
+  display: table;
+  margin-bottom: 20px;
+  position: relative;
+}
+/* line 178, ../scss/base.scss */
+.content-info h1 {
+  color: #666666;
+  font-family: 'muliregular';
+  font-size: 1.2em;
+  font-style: italic;
+  margin-bottom: 2px;
+}
+/* line 186, ../scss/base.scss */
+.content-info p {
+  color: #666666;
+  font-style: italic;
+}
+/* line 191, ../scss/base.scss */
+.content-info .content-info-options {
+  color: #006600;
+  font-size: 0.9em;
+  margin: 5px 0 10px 0;
+  position: relative;
+}
+/* line 197, ../scss/base.scss */
+.content-info .content-info-options li {
+  border-right: 1px solid #999999;
+  display: inline-block;
+  margin-right: 3px;
+  padding-right: 8px;
+}
+/* line 203, ../scss/base.scss */
+.content-info .content-info-options li i {
+  margin-right: 3px;
+}
+/* line 207, ../scss/base.scss */
+.content-info .content-info-options li:last-child {
+  border-right: 0px !important;
+}
+
 /*===================================================================
 	- > 1440px -
 ===================================================================*/
 @media screen and (max-width: 1439px) {
-  /* line 153, ../scss/base.scss */
+  /* line 217, ../scss/base.scss */
   .top-in {
     width: 1200px !important;
   }
 
-  /* line 154, ../scss/base.scss */
+  /* line 218, ../scss/base.scss */
   .content {
     width: 1200px !important;
   }
@@ -197,12 +287,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	- > 1270px -
 ===================================================================*/
 @media screen and (max-width: 1270px) {
-  /* line 161, ../scss/base.scss */
+  /* line 225, ../scss/base.scss */
   .top-in {
     width: 1000px !important;
   }
 
-  /* line 162, ../scss/base.scss */
+  /* line 226, ../scss/base.scss */
   .content {
     width: 1000px !important;
   }
@@ -211,12 +301,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	- > 1024px -
 ===================================================================*/
 @media screen and (max-width: 1024px) {
-  /* line 169, ../scss/base.scss */
+  /* line 233, ../scss/base.scss */
   .top-in {
     width: 870px !important;
   }
 
-  /* line 170, ../scss/base.scss */
+  /* line 234, ../scss/base.scss */
   .content {
     width: 870px !important;
   }
@@ -225,12 +315,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	- > 900px -
 ===================================================================*/
 @media screen and (max-width: 900px) {
-  /* line 177, ../scss/base.scss */
+  /* line 241, ../scss/base.scss */
   .top-in {
     width: 95% !important;
   }
 
-  /* line 178, ../scss/base.scss */
+  /* line 242, ../scss/base.scss */
   .content {
     width: 100% !important;
   }
@@ -239,7 +329,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	- > 900px -
 ===================================================================*/
 @media screen and (max-width: 800px) {
-  /* line 185, ../scss/base.scss */
+  /* line 249, ../scss/base.scss */
   .mobile-icon-search-all {
     height: 32px;
     position: absolute;
@@ -247,7 +337,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     width: 45px;
   }
 
-  /* line 191, ../scss/base.scss */
+  /* line 255, ../scss/base.scss */
   .mobile-icon-search {
     background: url("../img/sprite.png") no-repeat;
     background-position: -134px -0px;
@@ -258,7 +348,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     width: 32px;
   }
 
-  /* line 200, ../scss/base.scss */
+  /* line 264, ../scss/base.scss */
   .mobile-icon-drop-search {
     background: url("../img/sprite.png") no-repeat;
     background-position: -1px -1px;
@@ -270,7 +360,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     width: 9px;
   }
 
-  /* line 210, ../scss/base.scss */
+  /* line 274, ../scss/base.scss */
   .search-all {
     display: none;
   }

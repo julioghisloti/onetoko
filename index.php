@@ -59,7 +59,7 @@
 				<section class="slider-all">
 					
 					<!-- slider-title -->
-					<h1>Melhores Classificados</h1>
+					<h1 class="title"><span>Melhores Classificados</span></h1>
 
 					<div class="setas prev"></div>
 					<div class="setas next"></div>
@@ -126,6 +126,93 @@
 
 				</section>
 			<!-- [/slider] -->
+
+			<!-- [duvidas] -->
+				<section class="col-50pc">
+					<h1 class="title"><span>Principais Duvidas</span></h1>
+
+					<!-- content - repetir esse bloco -->
+					<section class="content-info">
+						<h1>O Moto X e o Nexus 4 possuem gravador?</h1>
+						<p>
+							Nexus eu sei que não tem, mas possui um microfone que, com o app correto, deve gravar bem 
+							o áudio. Já sobre o Moto X eu não posso confirmar nada mas creio que também não... 
+							<a href="#">7 respostas</a>
+						</p>
+						<div class="content-info-options">
+							<ul>
+								<li>sobre o <a href="#">Moto X</a></li>
+								<li><i class="icon responder"></i> <strong><a href="#">responder</a></strong></li>
+							</ul>
+						</div>
+					</section>
+					<!-- content -->
+
+					<!-- content - repetir esse bloco -->
+					<section class="content-info">
+						<h1>Duvidas com o Moto X</h1>
+						<p>
+							Fui usuário da familia Nexus desde os aparelhos HTC e isso me fez pegar o costume de usar 
+							android puro sempre em sua última versão. Infelizmente meu Nexus 4 caiu e se espatifou, 
+							me obrigando ...  
+							<a href="#">3 respostas</a>
+						</p>
+						<div class="content-info-options">
+							<ul>
+								<li>sobre o <a href="#">Moto X</a></li>
+								<li><i class="icon responder"></i> <strong><a href="#">responder</a></strong></li>
+							</ul>
+						</div>
+					</section>
+					<!-- content -->
+
+				</section>
+			<!-- [/duvidas] -->
+
+			<!-- [opiniões] -->
+				<section class="col-50pc">
+					<h1 class="title"><span>Principais Opiniões</span></h1>
+
+					<!-- content - repetir esse bloco -->
+					<section class="content-info">
+						<h1>Nam luctus varius tortor tincidunt scelerisque. Aenean rhoncus dictum.</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada ante vitae 
+							est vehicula pellentesque. Aliquam vel ipsum faucibus, bibendum sapien at, rutrum leo. 
+							Morbi vehicula ullamcorper porta. Etiam dapibus, felis eu tristique pretium, neque quam 
+							faucibus velit, vitae placerat augue purus venenatis sem.. .  
+							<a href="#">Leia mais</a>
+						</p>
+						<div class="content-info-options">
+							<ul>
+								<li>sobre o <a href="#">Galaxy Note 2</a></li>
+								<li><i class="icon responder"></i> <strong><a href="#">responder</a></strong></li>
+							</ul>
+						</div>
+					</section>
+					<!-- content -->
+
+					<!-- content - repetir esse bloco -->
+					<section class="content-info">
+						<h1>Nam luctus varius tortor tincidunt scelerisque. Aenean rhoncus dictum.</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur malesuada ante vitae 
+							est vehicula pellentesque. Aliquam vel ipsum faucibus, bibendum sapien at, rutrum leo. 
+							Morbi vehicula ullamcorper porta. Etiam dapibus, felis eu tristique pretium, neque quam 
+							faucibus velit, vitae placerat augue purus venenatis sem.. .  
+							<a href="#">Leia mais</a>
+						</p>
+						<div class="content-info-options">
+							<ul>
+								<li>sobre o <a href="#">iPhone 5s</a></li>
+								<li><i class="icon responder"></i> <strong><a href="#">responder</a></strong></li>
+							</ul>
+						</div>
+					</section>
+					<!-- content -->
+
+				</section>
+			<!-- [/opiniões] -->
 
 		</main>
 	<!-- [/content] -->

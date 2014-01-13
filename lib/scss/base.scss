@@ -1,35 +1,14 @@
-//- ONE toko -  Estilo Base
-
-//- Font
 @font-face {
-    font-family: 'alteraregular';
-    src: url('../font/altera-webfont.eot');
-    src: url('../font/altera-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/altera-webfont.woff') format('woff'),
-         url('../font/altera-webfont.ttf') format('truetype'),
-         url('../font/altera-webfont.svg#alteraregular') format('svg');
+    font-family: 'muli';
+    src: url('../font/muli-light-webfont.eot');
+    src: url('../font/muli-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/muli-light-webfont.woff') format('woff'),
+         url('../font/muli-light-webfont.ttf') format('truetype'),
+         url('../font/muli-light-webfont.svg#muliregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
-
-
-
-
-@font-face {
-    font-family: 'amorinoregular';
-    src: url('../font/amorino_beta-webfont.eot');
-    src: url('../font/amorino_beta-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/amorino_beta-webfont.woff') format('woff'),
-         url('../font/amorino_beta-webfont.ttf') format('truetype'),
-         url('../font/amorino_beta-webfont.svg#amorinoregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
 
 @font-face {
     font-family: 'muliregular';
@@ -49,10 +28,54 @@
 
 //- Cores
 $verde1: #009933;
-$verde2: #006633;
+$verde2: #006600;
 $cinza1: #F3F3F3;
 $cinza2: #999;
 $cinza3: #666;
+
+//- Grid
+.col-50pc{
+	float: left;
+	margin-right: 2%;
+	position: relative;
+	width: 48%;
+}
+
+//- Link
+a, a:link, a:visited{color: $verde2;}
+
+//- Comp 
+body{font-family: 'muli';}
+strong{
+	font-family: 'muliregular';
+	a, a:link, a:visited{text-decoration: none;}
+}
+
+//- Title
+.title{
+	border-bottom: 1px solid $verde2;
+	display: table;
+	font-size: 1.6em !important;
+	margin-bottom: 20px;
+	width: 100%;
+
+	span{
+		border-bottom: 2px solid $verde1; 
+		color: $cinza3;
+		float: left;
+	}
+}
+
+//- Icones
+.icon{
+	background: url("../img/sprite.png") no-repeat;
+	float: left;
+	height: 16px;
+	position: relative;
+	width: 16px;
+}
+
+.responder{background-position: -134px -32px;}
 
 //- Topo
 .top-all{
@@ -144,6 +167,47 @@ $cinza3: #666;
 	margin-top: 20px;
 	position: relative;
 	width: 1400px;
+}
+
+//- Info
+.content-info{
+	display: table;
+	margin-bottom: 20px;
+	position: relative;
+
+	h1{
+		color: $cinza3;
+		font-family: 'muliregular';
+		font-size: 1.2em;
+		font-style: italic;
+		margin-bottom: 2px;
+	}
+
+	p{
+		color: $cinza3;
+		font-style: italic;
+	}
+
+	.content-info-options{
+		color: $verde2;
+		font-size: 0.9em;
+		margin: 5px 0 10px 0;
+		position: relative;
+
+		li{
+			border-right: 1px solid $cinza2;
+			display: inline-block;
+			margin-right: 3px;
+			padding-right: 8px;
+
+			i{margin-right: 3px;}
+
+		}
+
+		li:last-child{border-right: 0px !important;}
+
+	}
+
 }
 
 /*===================================================================
