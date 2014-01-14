@@ -128,7 +128,7 @@
 			<!-- [/slider] -->
 
 			<!-- [duvidas] -->
-				<section class="col-50pc">
+				<section class="col _50pc">
 					<h1 class="title"><span>Principais Duvidas</span></h1>
 
 					<!-- content - repetir esse bloco -->
@@ -170,7 +170,7 @@
 			<!-- [/duvidas] -->
 
 			<!-- [opiniões] -->
-				<section class="col-50pc">
+				<section class="col _50pc">
 					<h1 class="title"><span>Principais Opiniões</span></h1>
 
 					<!-- content - repetir esse bloco -->

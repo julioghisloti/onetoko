@@ -80,33 +80,47 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 37, ../scss/base.scss */
-.col-50pc {
+.col {
   float: left;
   margin-right: 2%;
   position: relative;
+}
+
+/* line 43, ../scss/base.scss */
+._70pc {
+  width: 68%;
+}
+
+/* line 44, ../scss/base.scss */
+._50pc {
   width: 48%;
 }
 
 /* line 45, ../scss/base.scss */
+._30pc {
+  width: 28%;
+}
+
+/* line 48, ../scss/base.scss */
 a, a:link, a:visited {
   color: #006600;
 }
 
-/* line 48, ../scss/base.scss */
+/* line 51, ../scss/base.scss */
 body {
   font-family: 'muli';
 }
 
-/* line 49, ../scss/base.scss */
+/* line 52, ../scss/base.scss */
 strong {
   font-family: 'muliregular';
 }
-/* line 51, ../scss/base.scss */
+/* line 54, ../scss/base.scss */
 strong a, strong a:link, strong a:visited {
   text-decoration: none;
 }
 
-/* line 55, ../scss/base.scss */
+/* line 58, ../scss/base.scss */
 .title {
   border-bottom: 1px solid #006600;
   display: table;
@@ -114,14 +128,14 @@ strong a, strong a:link, strong a:visited {
   margin-bottom: 20px;
   width: 100%;
 }
-/* line 62, ../scss/base.scss */
+/* line 65, ../scss/base.scss */
 .title span {
   border-bottom: 2px solid #009933;
   color: #666666;
   float: left;
 }
 
-/* line 70, ../scss/base.scss */
+/* line 73, ../scss/base.scss */
 .icon {
   background: url("../img/sprite.png") no-repeat;
   float: left;
@@ -130,12 +144,12 @@ strong a, strong a:link, strong a:visited {
   width: 16px;
 }
 
-/* line 78, ../scss/base.scss */
+/* line 81, ../scss/base.scss */
 .responder {
   background-position: -134px -32px;
 }
 
-/* line 81, ../scss/base.scss */
+/* line 84, ../scss/base.scss */
 .top-all {
   background: url("../img/top-bg.png") repeat;
   border-bottom: 1px solid #999999;
@@ -144,7 +158,7 @@ strong a, strong a:link, strong a:visited {
   width: 100%;
   z-index: 9999;
 }
-/* line 90, ../scss/base.scss */
+/* line 93, ../scss/base.scss */
 .top-all .top-in {
   margin-left: auto;
   margin-right: auto;
@@ -152,12 +166,12 @@ strong a, strong a:link, strong a:visited {
   top: 13px;
   width: 1400px;
 }
-/* line 97, ../scss/base.scss */
+/* line 100, ../scss/base.scss */
 .top-all .top-in .logo {
   float: left;
   position: relative;
 }
-/* line 102, ../scss/base.scss */
+/* line 105, ../scss/base.scss */
 .top-all .top-in .search-all {
   border: 1px solid #006600;
   height: 37px;
@@ -171,7 +185,7 @@ strong a, strong a:link, strong a:visited {
   -o-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 112, ../scss/base.scss */
+/* line 115, ../scss/base.scss */
 .top-all .top-in .search-all input[type="text"] {
   background: url("");
   border: 0px;
@@ -183,7 +197,7 @@ strong a, strong a:link, strong a:visited {
   margin-top: 7px;
   width: 337px;
 }
-/* line 124, ../scss/base.scss */
+/* line 127, ../scss/base.scss */
 .top-all .top-in .search-all button {
   background: url("");
   border: 0;
@@ -192,11 +206,11 @@ strong a, strong a:link, strong a:visited {
   right: 5px;
   top: 8px;
 }
-/* line 133, ../scss/base.scss */
+/* line 136, ../scss/base.scss */
 .top-all .top-in .search-all button:hover {
   cursor: pointer;
 }
-/* line 137, ../scss/base.scss */
+/* line 140, ../scss/base.scss */
 .top-all .top-in .user-place {
   display: block;
   height: 36px;
@@ -205,7 +219,7 @@ strong a, strong a:link, strong a:visited {
   top: 3px;
   width: 50px;
 }
-/* line 145, ../scss/base.scss */
+/* line 148, ../scss/base.scss */
 .top-all .top-in .user-place .user-option_drop-icon {
   background: url("../img/sprite.png") no-repeat;
   background-position: -1px -1px;
@@ -217,7 +231,7 @@ strong a, strong a:link, strong a:visited {
   width: 9px;
 }
 
-/* line 163, ../scss/base.scss */
+/* line 166, ../scss/base.scss */
 .content {
   display: table;
   margin-left: auto;
@@ -227,13 +241,13 @@ strong a, strong a:link, strong a:visited {
   width: 1400px;
 }
 
-/* line 173, ../scss/base.scss */
+/* line 176, ../scss/base.scss */
 .content-info {
   display: table;
   margin-bottom: 20px;
   position: relative;
 }
-/* line 178, ../scss/base.scss */
+/* line 181, ../scss/base.scss */
 .content-info h1 {
   color: #666666;
   font-family: 'muliregular';
@@ -241,44 +255,92 @@ strong a, strong a:link, strong a:visited {
   font-style: italic;
   margin-bottom: 2px;
 }
-/* line 186, ../scss/base.scss */
+/* line 189, ../scss/base.scss */
 .content-info p {
   color: #666666;
   font-style: italic;
 }
-/* line 191, ../scss/base.scss */
+/* line 194, ../scss/base.scss */
 .content-info .content-info-options {
   color: #006600;
   font-size: 0.9em;
   margin: 5px 0 10px 0;
   position: relative;
 }
-/* line 197, ../scss/base.scss */
+/* line 200, ../scss/base.scss */
 .content-info .content-info-options li {
   border-right: 1px solid #999999;
   display: inline-block;
   margin-right: 3px;
   padding-right: 8px;
 }
-/* line 203, ../scss/base.scss */
+/* line 206, ../scss/base.scss */
 .content-info .content-info-options li i {
   margin-right: 3px;
 }
-/* line 207, ../scss/base.scss */
+/* line 210, ../scss/base.scss */
 .content-info .content-info-options li:last-child {
   border-right: 0px !important;
+}
+
+/* line 217, ../scss/base.scss */
+.block {
+  background-color: #f3f3f3;
+  display: table;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
+  width: 100%;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 227, ../scss/base.scss */
+.block h1 {
+  border-left: 2px solid #009933;
+  color: #666666;
+  font-size: 20px;
+  margin-bottom: 15px;
+  padding: 0 0 0 10px;
+}
+/* line 234, ../scss/base.scss */
+.block h1 span {
+  margin-left: 8px;
+}
+/* line 238, ../scss/base.scss */
+.block .content-block {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  position: relative;
+  width: 80%;
+}
+/* line 246, ../scss/base.scss */
+.block .content-block p {
+  font-size: 1em;
+  margin-left: 10px;
+  text-align: justify;
+}
+/* line 251, ../scss/base.scss */
+.block .content-block p a {
+  color: #009933;
+  font-size: 13px;
+  text-decoration: none;
 }
 
 /*===================================================================
 	- > 1440px -
 ===================================================================*/
 @media screen and (max-width: 1439px) {
-  /* line 217, ../scss/base.scss */
+  /* line 266, ../scss/base.scss */
   .top-in {
     width: 1200px !important;
   }
 
-  /* line 218, ../scss/base.scss */
+  /* line 267, ../scss/base.scss */
   .content {
     width: 1200px !important;
   }
@@ -287,12 +349,12 @@ strong a, strong a:link, strong a:visited {
 	- > 1270px -
 ===================================================================*/
 @media screen and (max-width: 1270px) {
-  /* line 225, ../scss/base.scss */
+  /* line 274, ../scss/base.scss */
   .top-in {
     width: 1000px !important;
   }
 
-  /* line 226, ../scss/base.scss */
+  /* line 275, ../scss/base.scss */
   .content {
     width: 1000px !important;
   }
@@ -301,12 +363,12 @@ strong a, strong a:link, strong a:visited {
 	- > 1024px -
 ===================================================================*/
 @media screen and (max-width: 1024px) {
-  /* line 233, ../scss/base.scss */
+  /* line 282, ../scss/base.scss */
   .top-in {
     width: 870px !important;
   }
 
-  /* line 234, ../scss/base.scss */
+  /* line 283, ../scss/base.scss */
   .content {
     width: 870px !important;
   }
@@ -315,12 +377,12 @@ strong a, strong a:link, strong a:visited {
 	- > 900px -
 ===================================================================*/
 @media screen and (max-width: 900px) {
-  /* line 241, ../scss/base.scss */
+  /* line 290, ../scss/base.scss */
   .top-in {
     width: 95% !important;
   }
 
-  /* line 242, ../scss/base.scss */
+  /* line 291, ../scss/base.scss */
   .content {
     width: 100% !important;
   }
@@ -329,7 +391,7 @@ strong a, strong a:link, strong a:visited {
 	- > 900px -
 ===================================================================*/
 @media screen and (max-width: 800px) {
-  /* line 249, ../scss/base.scss */
+  /* line 298, ../scss/base.scss */
   .mobile-icon-search-all {
     height: 32px;
     position: absolute;
@@ -337,7 +399,7 @@ strong a, strong a:link, strong a:visited {
     width: 45px;
   }
 
-  /* line 255, ../scss/base.scss */
+  /* line 304, ../scss/base.scss */
   .mobile-icon-search {
     background: url("../img/sprite.png") no-repeat;
     background-position: -134px -0px;
@@ -348,7 +410,7 @@ strong a, strong a:link, strong a:visited {
     width: 32px;
   }
 
-  /* line 264, ../scss/base.scss */
+  /* line 313, ../scss/base.scss */
   .mobile-icon-drop-search {
     background: url("../img/sprite.png") no-repeat;
     background-position: -1px -1px;
@@ -360,7 +422,7 @@ strong a, strong a:link, strong a:visited {
     width: 9px;
   }
 
-  /* line 274, ../scss/base.scss */
+  /* line 323, ../scss/base.scss */
   .search-all {
     display: none;
   }

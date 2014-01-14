@@ -1,0 +1,73 @@
+//- ONE toko - Estilo PRODUTOS
+
+//- Base
+@import "base.scss";
+@import "compass/css3";
+
+//- Top
+.top-all{position: relative !important;}
+
+//- Produto
+.produto{
+
+	.prod-title{
+		color: $verde2; 
+		font-family: 'muli'; 
+		font-size: 1.6em;
+		margin-bottom: 3px;
+	}
+
+	.prod-sub-title{
+		color: $cinza2; 
+		font-family: 'muli'; 
+		font-size: 0.9em;
+		font-style: italic;
+	}
+
+	.prod-img{
+		height: 392px;
+		margin-top: 10px;
+		overflow: hidden;
+		width: 100%;
+
+		img{
+			height: auto;
+			width: 100%;
+		}
+
+		li{display: inline-block;}
+
+		.setas{
+			background: url("../img/sprite.png") no-repeat;
+			display: block;
+			height: 32px;
+			left: 15px;
+			position: absolute;
+			width: 17px;
+		}
+
+		.prev{
+			background-position: -166px -1px;
+			margin-top: -16px;
+			top: 37%;
+		}
+
+		.next{
+			
+		}
+
+	}
+
+	.bt{
+		background-color: $verde2;
+		color: #fff;
+		display: block;
+		font-family: 'muliregular';
+		margin-top: 10px;
+		padding: 20px 0 20px 0;
+		text-align: center;
+		text-decoration: none;
+		width: 100%;
+	}
+
+}
