@@ -1,0 +1,288 @@
+//- ONE toko - Estilo HOME
+
+//- Base
+@import "base.scss";
+@import "compass/css3";
+
+//- Banner
+.banner-all{
+	height: 600px;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+
+	img{
+		float: left;
+		width: 100%;
+	}
+
+	.banner-content{
+		height: 503px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		width: 1400px;
+		top: 82px;
+
+		//- switch
+		.switch{
+			background: url("../img/top-bg.png") repeat;
+			height: 71px;
+			margin-top: -43px;
+			padding: 10px;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			width: 14px;
+
+			li{
+				border: 1px solid $verde2;
+				height: 12px;
+				margin-bottom: 5px;
+				width: 12px;
+
+				@include border-radius(100%);
+				@include transition-duration(1s);
+				@include transition-property(1s);
+			}
+
+			li:hover{
+				border: 1px solid $verde1;
+				cursor: pointer;
+			}
+
+			.active{background-color: $verde1;}
+
+		}
+
+		.banner-text{
+			background: url("../img/top-bg.png") repeat;
+			bottom: 0;
+			font-family: 'muliregular';
+			height: 195px;
+			position: absolute;
+			width: 485px;
+
+			@include border-radius(5px);
+
+			h1{
+				border-left: 3px solid $verde1;
+				font-size: 30px;
+				margin-top: 15px;
+				
+				span{
+					margin-left: 6px;
+				}
+
+			}
+
+			p{
+				font-size: 16px;
+				padding: 10px;
+			}
+
+			a{
+				color: $verde1;
+				font-size: 25px;
+				margin-left: 10px;
+				text-decoration: none;
+			}
+
+		}
+
+	}
+
+}
+
+//- Slider
+.slider-all{
+	border-bottom: 1px solid $cinza2;
+	position: relative;
+	margin-bottom: 30px;
+	width: 1400px;
+
+	h1{
+		font-family: 'muliregular';
+		font-size: 23px;
+		margin-bottom: 20px;
+	}
+
+	.setas{
+		background-color: #fff;
+		height: 45px;
+		margin-top: -21px;
+		position: absolute;
+		top: 50%;
+		width: 26px;
+	}
+
+	.setas:hover{cursor: pointer;}
+
+	.prev{
+		background: url("../img/sprite.png") no-repeat;
+		background-position: -29px -18px;
+	}
+
+	.next{
+		background: url("../img/sprite.png") no-repeat;
+		background-position: -3px -18px;
+		right: 0 !important;
+	}
+
+	.slider-content{
+		font-family: 'muliregular';
+		height: 320px;
+		left: 30px !important;
+		margin-bottom: 30px;
+		position: relative;
+		overflow: hidden;
+
+		li{
+			background-color: $cinza1;
+			display: inline-block;
+			height: 306px;
+			margin-right: 10px;
+			padding-right: 10px;
+			padding-top: 10px;
+			width: 270px;
+
+			@include border-radius(4px);
+
+			h1{
+				border-left: 2px solid $verde1;
+				color: $cinza3;
+				font-size: 20px;
+				margin-bottom: 15px;
+
+				span{margin-left: 8px;}
+
+			}
+
+			img{margin-bottom: 10px; margin-left: 10px;}
+
+			p{
+				font-size: 15px; 
+				margin-left: 10px;
+				text-align: justify;
+
+				a{
+					color: $verde1; 
+					font-size: 13px;
+					text-decoration: none;
+				}
+			}
+
+		}
+
+	}
+
+}
+
+/*===================================================================
+	- > 1440px -
+===================================================================*/
+@media screen and(max-width: 1439px){
+	.banner-content{width: 1200px !important;}
+	.slider-all{width: 1200px !important;}
+	.slider-content{width: 1138px !important;}
+}
+
+/*===================================================================
+	- > 1270px -
+===================================================================*/
+@media screen and(max-width: 1270px){
+	.banner-content{width: 1000px !important;}
+	.slider-all{width: 1000px !important;}
+	.slider-content{width: 940px !important;}
+}
+
+/*===================================================================
+	- > 1024px -
+===================================================================*/
+@media screen and(max-width: 1024px){
+	.banner-all{ img{
+		height: 100% !important; 
+		width: auto !important;
+	} }
+
+	.banner-content{width: 870px !important;}
+	.slider-all{width: 870px !important;}
+	.slider-content{
+		width: 810px !important;
+
+		li{
+			width: 236px !important;
+
+			img{
+				width: 225px;
+			}
+
+		}
+
+	}
+}
+
+/*===================================================================
+	- > 900px -
+===================================================================*/
+@media screen and(max-width: 900px){
+	.banner-all{ 
+		img{
+			height: 100% !important; 
+			width: auto !important;
+		}
+
+		.banner-content{
+			width: 100% !important;
+			height: 520px !important;
+
+			.switch{
+				border-bottom: 1px solid #008000 !important;
+			    height: 24px !important;
+			    padding: 10px !important;
+			    top: 323px !important;
+			    width: 107px !important;
+
+				li{
+					border: 1px solid #006633 !important;			
+					display: inline-block;
+				    height: 21px !important;
+				    width: 21px !important;
+				}
+			
+
+			}
+			
+			.banner-text{
+				width: 100% !important;
+				@include border-radius(0px !important);
+			}
+
+		} 
+
+	}
+
+	.slider-all{
+		width: 100% !important;
+
+		.setas{display: none;}
+
+		.slider-content{
+			left: 0 !important;
+			width: 100% !important;
+
+			ul{overflow: hidden;}
+			li{
+				width: 236px !important;
+
+				img{
+					width: 225px;
+				}
+
+			}
+
+		}
+	    
+	}
+
+}

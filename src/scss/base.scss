@@ -1,0 +1,213 @@
+//- ONE toko -  Estilo Base
+
+//- Font
+@font-face {
+    font-family: 'alteraregular';
+    src: url('../font/altera-webfont.eot');
+    src: url('../font/altera-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/altera-webfont.woff') format('woff'),
+         url('../font/altera-webfont.ttf') format('truetype'),
+         url('../font/altera-webfont.svg#alteraregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'amorinoregular';
+    src: url('../font/amorino_beta-webfont.eot');
+    src: url('../font/amorino_beta-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/amorino_beta-webfont.woff') format('woff'),
+         url('../font/amorino_beta-webfont.ttf') format('truetype'),
+         url('../font/amorino_beta-webfont.svg#amorinoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'muliregular';
+    src: url('../font/muli-regular-webfont.eot');
+    src: url('../font/muli-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/muli-regular-webfont.woff') format('woff'),
+         url('../font/muli-regular-webfont.ttf') format('truetype'),
+         url('../font/muli-regular-webfont.svg#muliregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+//- Reset
+@import "compass/reset"; 
+@import "compass/css3";
+
+//- Cores
+$verde1: #009933;
+$verde2: #006633;
+$cinza1: #F3F3F3;
+$cinza2: #999;
+$cinza3: #666;
+
+//- Topo
+.top-all{
+	background: url("../img/top-bg.png") repeat;
+	border-bottom: 1px solid $cinza2;
+	height: 67px;
+	position: absolute;
+	width: 100%;
+	z-index: 9999;
+
+	//- top-in
+	.top-in{
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		top: 13px;
+		width: 1400px;
+	
+		.logo{
+			float: left;
+			position: relative;
+		}
+
+		.search-all{
+			border: 1px solid $verde2;
+			height: 37px;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			width: 386px;
+
+			@include border-radius(5px);
+
+			input[type="text"]{
+				background: url("");
+				border: 0px;
+				color: $cinza2;
+				font-family: 'muliregular';
+				font-size: 16px;
+				left: 20px;
+				margin-left: 10px;
+				margin-top: 7px;
+				width: 337px;
+			}
+
+			button{
+				background: url("");
+				border: 0;
+				color: $cinza2;
+				position: absolute;
+				right: 5px;
+				top: 8px;
+			}
+
+			button:hover{cursor: pointer;}
+
+		}
+
+		.user-place{
+			display: block;
+			height: 36px;
+			position: absolute;
+			right: 0;
+			top: 3px;
+			width: 50px;
+
+			.user-option_drop-icon{
+				background: url("../img/sprite.png") no-repeat;
+				background-position: -1px -1px;
+				display: absolute;
+				height: 5px;
+				position: absolute;
+				right: 0;
+				top: 15px;
+				width: 9px;
+			}
+
+		}
+
+	}
+
+}
+
+//- Content
+.content{
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	position: relative;
+	width: 1400px;
+}
+
+/*===================================================================
+	- > 1440px -
+===================================================================*/
+@media screen and(max-width: 1439px){
+	.top-in{width: 1200px !important;}
+	.content{width: 1200px !important;}
+}
+
+/*===================================================================
+	- > 1270px -
+===================================================================*/
+@media screen and(max-width: 1270px){
+	.top-in{width: 1000px !important;}
+	.content{width: 1000px !important;}
+}
+
+/*===================================================================
+	- > 1024px -
+===================================================================*/
+@media screen and(max-width: 1024px){
+	.top-in{width: 870px !important;}
+	.content{width: 870px !important;}
+}
+
+/*===================================================================
+	- > 900px -
+===================================================================*/
+@media screen and(max-width: 900px){
+	.top-in{width: 95% !important;}
+	.content{width: 100% !important;}
+}
+
+/*===================================================================
+	- > 900px -
+===================================================================*/
+@media screen and(max-width: 800px){
+	.mobile-icon-search-all{
+		height: 32px;
+		position: absolute;
+		right: 70px;
+		width: 45px;
+	}
+	.mobile-icon-search{
+		background: url("../img/sprite.png") no-repeat;
+		background-position: -134px -0px;
+		display: block;
+		height: 32px;
+		position: absolute;
+		top: 5px;
+		width: 32px;
+	}
+	.mobile-icon-drop-search{
+		background: url("../img/sprite.png") no-repeat;
+		background-position: -1px -1px;
+		display: absolute;
+		height: 5px;
+		position: absolute;
+		right: 0;
+		top: 18px;
+		width: 9px;
+	}
+	.search-all{
+		display: none;
+	}
+}
