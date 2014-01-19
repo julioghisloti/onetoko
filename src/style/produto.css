@@ -423,3 +423,123 @@ strong {
   /* line 372, ../scss/base.scss */
   .search-all {
     display: none; } }
+/* line 8, ../scss/produto.scss */
+.top-all {
+  position: relative !important; }
+
+/* line 13, ../scss/produto.scss */
+.produto .prod-title {
+  color: #006600;
+  font-family: 'muli';
+  font-size: 1.6em;
+  margin-bottom: 3px; }
+/* line 20, ../scss/produto.scss */
+.produto .prod-sub-title {
+  color: #999999;
+  font-family: 'muli';
+  font-size: 0.9em;
+  font-style: italic; }
+/* line 27, ../scss/produto.scss */
+.produto .prod-img {
+  height: 392px;
+  margin-top: 10px;
+  overflow: hidden;
+  width: 100%; }
+  /* line 33, ../scss/produto.scss */
+  .produto .prod-img img {
+    height: auto;
+    width: 100%; }
+  /* line 38, ../scss/produto.scss */
+  .produto .prod-img li {
+    display: inline-block; }
+  /* line 40, ../scss/produto.scss */
+  .produto .prod-img .setas {
+    background: url("../img/sprite.png") no-repeat;
+    display: block;
+    height: 32px;
+    margin-top: -16px;
+    position: absolute;
+    top: 37%;
+    width: 17px;
+    z-index: 9999; }
+  /* line 51, ../scss/produto.scss */
+  .produto .prod-img .prev {
+    background-position: -166px -1px;
+    left: 15px; }
+  /* line 56, ../scss/produto.scss */
+  .produto .prod-img .next {
+    background-position: -167px -34px;
+    right: 15px; }
+/* line 63, ../scss/produto.scss */
+.produto .bt {
+  background-color: #006600;
+  color: #fff;
+  display: block;
+  font-family: 'muliregular';
+  margin-left: 0px !important;
+  margin-top: 10px;
+  padding: 20px 0 20px 0;
+  text-align: center;
+  text-decoration: none;
+  width: -webkit-calc(100% - 2px);
+  width: -moz-calc(100% - 2px);
+  width: -ms-calc(100% - 2px);
+  width: -o-calc(100% - 2px);
+  width: calc(100% - 2px); }
+
+/* line 83, ../scss/produto.scss */
+.especificacoes {
+  display: table; }
+  /* line 85, ../scss/produto.scss */
+  .especificacoes p {
+    font-size: .9em;
+    margin-bottom: 10px; }
+
+/* line 90, ../scss/produto.scss */
+.duvidas .section-title {
+  color: #666666;
+  border-bottom: 2px solid #009933;
+  float: left;
+  padding: 3px;
+  position: relative;
+  margin-right: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+/* line 101, ../scss/produto.scss */
+.duvidas .seta {
+  background: url("../img/sprite.png") no-repeat;
+  background-position: 4px -8px;
+  border: 0px !important;
+  display: block;
+  height: 6px;
+  left: 50%;
+  margin-left: -7px;
+  padding: 0px !important;
+  position: absolute;
+  top: 28px;
+  width: 14px;
+  z-index: 9998; }
+/* line 116, ../scss/produto.scss */
+.duvidas .disabled {
+  color: #cccccc;
+  border-bottom: 2px solid #cccccc;
+  font-size: 1em;
+  font-weight: thin; }
+  /* line 122, ../scss/produto.scss */
+  .duvidas .disabled .seta {
+    display: none; }
+/* line 127, ../scss/produto.scss */
+.duvidas .content-block {
+  width: -moz-calc(96.9% - 5px);
+  width: -webkit-calc(96.9% - 5px);
+  width: -ms-calc(96.9% - 5px); }
+
+/*===================================================================
+	- > 1440px -
+===================================================================*/
+@media screen and (max-width: 1439px) {
+  /* line 138, ../scss/produto.scss */
+  .prod-img {
+    height: 320px !important; } }

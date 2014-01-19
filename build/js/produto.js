@@ -1,0 +1,1 @@
+$(function(){$(".prod-img-content").jCarouselLite({btnNext:".next",btnPrev:".prev",circular:!1}),$(".section-title").on("click",function(){$(this).parent().children().addClass("disabled"),$(this).removeClass("disabled")})});

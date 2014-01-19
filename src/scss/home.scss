@@ -4,6 +4,8 @@
 @import "base.scss";
 @import "compass/css3";
 
+//yteste
+
 //- Banner
 .banner-all{
 	height: 600px;
@@ -96,7 +98,6 @@
 
 //- Slider
 .slider-all{
-	border-bottom: 1px solid $cinza2;
 	position: relative;
 	margin-bottom: 30px;
 	width: 1400px;
@@ -120,12 +121,12 @@
 
 	.prev{
 		background: url("../img/sprite.png") no-repeat;
-		background-position: -29px -18px;
+		background-position: -28px -18px;
 	}
 
 	.next{
 		background: url("../img/sprite.png") no-repeat;
-		background-position: -3px -18px;
+		background-position: 0px -18px;
 		right: 0 !important;
 	}
 
